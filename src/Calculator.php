@@ -19,7 +19,8 @@ class Calculator
     public static function checkIsPerfectNumber(int $number): bool
     {
         $sum = 0;
-        for ($i = 1; $i < $number; $i++) {
+        $to = intval($number / 2) + 1;
+        for ($i = 1; $i < $to; $i++) {
             if ($number % $i == 0) {
                 $sum += $i;
             }

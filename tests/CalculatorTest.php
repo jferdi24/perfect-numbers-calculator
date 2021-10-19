@@ -21,5 +21,6 @@ class CalculatorTest extends TestCase
         $this->assertEquals(false, Calculator::checkIsPerfectNumber(8));
         $this->assertEquals(true, Calculator::checkIsPerfectNumber(28));
         $this->assertEquals(false, Calculator::checkIsPerfectNumber(3));
+        $this->assertEquals(false, Calculator::checkIsPerfectNumber(12));
     }
 }
